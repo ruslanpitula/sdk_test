@@ -4,15 +4,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "MyPackage",
+    name: "Package-multiple-test",
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "TestSDK",
-            targets: ["TestSDK"]),
-        .library(
-            name: "TestSDK-static",
-            targets: ["TestSDK-static"]),
+            targets: ["TestSDK", "TestSDK-static"]),
+//        .library(
+//            name: "TestSDK-static",
+//            targets: ["TestSDK-static"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
